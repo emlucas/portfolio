@@ -2,7 +2,7 @@ import HeadlineImage from "@/app/homepage/headlineImage";
 
 const Headline = () => {
 	return (
-		<section className={'flex justify-between w-full pt-64 pb-28'} id={'home'}>
+		<section className={'flex justify-between w-full pt-32 pb-28'} id={'home'}>
 			<div className={'flex flex-col items-start justify-center'}>
 				<span className={'font-medium pl-1'}>Hi, I'm</span>
 				<h1 className={'font-extrabold text-6xl'} id={'my-name'}>

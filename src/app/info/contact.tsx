@@ -1,7 +1,7 @@
 const Contact = () => {
 	return (
-		<section className={'flex flex-col text-xl py-18'} id={'contact'}>
-			<h3 className={'font-medium italic mb-2'}>Get in touch</h3>
+		<section className={'flex flex-col text-xl py-8'} id={'contact'}>
+			<h3 className={'font-medium mb-2'}>Get in touch</h3>
 			<div>
 				<span>Email: </span>
 				<a className={'underline'} href={'mailto:emmalucas256@gmail.com'}>emmalucas256@gmail.com</a>

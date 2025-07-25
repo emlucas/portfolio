@@ -1,5 +1,4 @@
 import Headline from "@/app/homepage/headline";
-import Header from "@/app/header/header"
 import About from "@/app/info/about";
 import Contact from "@/app/info/contact";
 
@@ -8,7 +7,7 @@ export default function Home() {
 
 	return (
 		<div className={'flex flex-col items-center min-w-screen min-h-screen'}>
-			<Header width={width}/>
+			{/*<Header width={width}/>*/}
 
 			<main className={'flex flex-col px-3 pb-3 ' + width}>
 				<Headline/>

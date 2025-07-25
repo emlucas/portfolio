@@ -34,10 +34,16 @@ header {
 }
 
 .ctaButton {
-    background: #fd1d6b;
+    background: var(--color-rose-400);
     /*background: linear-gradient(270deg, rgba(253, 29, 107, 1) 0%, rgba(252, 176, 69, 1) 100%);*/
     background: linear-gradient(45deg, var(--color-orange-400) 0%, var(--color-rose-400) 100%);
     color: white;
 
     transition: box-shadow 0.3s;
+}
+
+.activeNav {
+    /*width: 308px;*/
+    background: var(--color-rose-400);
+    background: linear-gradient(to right, var(--color-orange-400) 0%, var(--color-rose-400) 100%);
 }
