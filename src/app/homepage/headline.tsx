@@ -1,11 +1,19 @@
+import HeadlineImage from "@/app/homepage/headlineImage";
+
 const Headline = () => {
 	return (
-		<section className={'flex w-full pt-18'}>
+		<section className={'flex justify-between w-full py-28'} id={'home'}>
 			<div className={'flex flex-col items-start justify-center'}>
-				<div className={'font-medium'}>Hi, I'm</div>
-				<div className={'font-bold text-6xl'}>Emma Lucas</div>
-				<div className={'tracking-wide font-medium'}>Full-stack web developer</div>
+				<span className={'font-medium pl-1'}>Hi, I'm</span>
+				<h1 className={'font-extrabold text-6xl'}>
+					Emma Lucas
+				</h1>
+				<h2 className={'tracking-wider font-medium text-lg pl-1'}>
+					Full-stack web developer
+				</h2>
 			</div>
+
+			<HeadlineImage/>
 		</section>
 	)
 }
