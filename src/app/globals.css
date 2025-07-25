@@ -47,3 +47,7 @@ header {
     background: var(--color-rose-400);
     background: linear-gradient(to right, var(--color-orange-400) 0%, var(--color-rose-400) 100%);
 }
+
+img {
+    transition: box-shadow 0.3s;
+}
