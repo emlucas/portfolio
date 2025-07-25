@@ -12,10 +12,14 @@ const Headline = () => {
 					Full-stack web developer
 				</h2>
 
-				<button className={'mt-8'}>
-					<a className={'ctaButton font-bold box-border border border-white/30 py-3 px-4 rounded-2xl shadow-rose-400 ' +
-						'hover:shadow-2xl cursor-pointer'}>Download CV</a>
-				</button>
+				<a className={'ctaButton mt-8 py-3 px-4 rounded-xl ' +
+					'shadow-rose-400 bg-white/20 border border-white/20 border-t-white/35 border-l-white/35 backdrop-blur-2xl ' +
+					'hover:shadow-2xl cursor-pointer'}
+				>
+					<span className={'font-bold bg-gradient-to-r from-orange-400 to-rose-400 text-transparent bg-clip-text'}>
+						Download CV
+					</span>
+				</a>
 			</div>
 
 			<HeadlineImage/>

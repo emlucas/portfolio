@@ -1,23 +1,23 @@
 @import "tailwindcss";
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    --background: #120d15;
+    --foreground: #f0e1e3;
 }
 
-@theme inline {
+@theme {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --font-sans: var(--font-montserrat-sans);
     --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
-}
+/*@media (prefers-color-scheme: dark) {*/
+/*    :root {*/
+/*        --background: #0a0a0a;*/
+/*        --foreground: #ededed;*/
+/*    }*/
+/*}*/
 
 body {
     background: var(--background);
@@ -34,10 +34,9 @@ header {
 }
 
 .ctaButton {
-    background: var(--color-rose-400);
-    /*background: linear-gradient(270deg, rgba(253, 29, 107, 1) 0%, rgba(252, 176, 69, 1) 100%);*/
-    background: linear-gradient(45deg, var(--color-orange-400) 0%, var(--color-rose-400) 100%);
-    color: white;
+    /*background: var(--color-rose-400);*/
+    /*!*background: linear-gradient(270deg, rgba(253, 29, 107, 1) 0%, rgba(252, 176, 69, 1) 100%);*!*/
+    /*background: linear-gradient(45deg, var(--color-orange-400) 0%, var(--color-rose-400) 100%);*/
 
     transition: box-shadow 0.3s;
 }
