@@ -4,10 +4,13 @@ import About from "@/app/info/about";
 import Contact from "@/app/info/contact";
 
 export default function Home() {
+	const width = 'xl:w-5xl sm:w-4/5 w-full pageWidth';
+
 	return (
-		<div className={'flex justify-center min-w-screen min-h-screen pt-14'}>
-			<main className={'flex flex-col xl:w-5xl sm:w-4/5 w-full p-3'}>
-				<Header/>
+		<div className={'flex flex-col items-center min-w-screen min-h-screen'}>
+			<Header width={width}/>
+			
+			<main className={'flex flex-col px-3 pb-3 ' + width}>
 				<Headline/>
 
 				<About/>
