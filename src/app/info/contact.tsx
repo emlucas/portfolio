@@ -9,11 +9,11 @@ const Contact = () => {
 			<div className={'flex gap-3 mt-2'}>
 				<a href={'https://www.linkedin.com/in/emma-lucas-0241b4155/'} target={'_blank'}>
 					<img src={'linkedin.svg'} alt={'LinkedIn'} width={25} height={25}
-						  className={'shadow-rose-400 hover:shadow-md'}/>
+						  className={'shadow-rose-400 hover:shadow-md opacity-70 hover:opacity-100'}/>
 				</a>
 				<a href={'https://github.com/emlucas'} target={'_blank'}>
 					<img src={'github.svg'} alt={'Github'} width={25} height={25}
-						  className={'shadow-rose-400 hover:shadow-md rounded-full'}/>
+						  className={'shadow-rose-400 hover:shadow-md rounded-full opacity-70 hover:opacity-100'}/>
 				</a>
 			</div>
 		</section>
