@@ -20,7 +20,7 @@ const Headline = () => {
 			</div>
 
 			<div
-				className={'imgWrapper absolute top-2 right-[10vh] sm:-right-6 md:-right-12 lg:right-0 w-[60vw] h-[60vw] sm:w-[400px] sm:h-[400px]'}>
+				className={'imgWrapper absolute top-2 right-[calc(12vw+8px)] sm:-right-6 md:-right-12 lg:right-0 size-[60vw] sm:size-[400px]'}>
 				<HeadlineImage/>
 			</div>
 		</section>
