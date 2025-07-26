@@ -11,26 +11,25 @@ const HeadlineImage = () => {
 
   useGSAP(() => {
     const durations = [10, 12, 14];
-    const startingRotations: number[] = [];
-
-    const blobs = blobSvg.current?.getElementsByClassName('blob') || [];
-    for (let i = 0; i < blobs.length; i++) {
-      startingRotations[i] = gsap.utils.random(0, 360);
-    }
 
     // Rotate sub-blob circle elements
-    gsap.fromTo('.blob', {
-        rotation: (index) => startingRotations[index],
-        transformOrigin: '40% 50%',
-      },
-      {
-        rotation: (index) => startingRotations[index] + 360,
-        transformOrigin: '40% 50%',
-        repeat: -1,
-        ease: 'none',
-        duration: (index) => durations[index],
-      }
-    )
+    const blobs = blobSvg.current?.getElementsByClassName('blob') || [];
+    for (let i = 0; i < blobs.length; i++) {
+      const startingRotation = gsap.utils.random(0, 360);
+
+      gsap.fromTo(blobs[i], {
+          rotation: startingRotation,
+          transformOrigin: '40% 50%',
+        },
+        {
+          rotation: startingRotation + 360,
+          transformOrigin: '40% 50%',
+          repeat: -1,
+          ease: 'none',
+          duration: durations[i],
+        }
+      )
+    }
 
     // Fade in the entire image blob component
     gsap.fromTo(blobSvg.current, {
