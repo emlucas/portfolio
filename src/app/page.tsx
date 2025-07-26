@@ -9,7 +9,7 @@ export default function Home() {
 		<div className={'flex flex-col items-center min-w-screen min-h-screen'}>
 			{/*<Header width={width}/>*/}
 
-			<main className={'flex flex-col px-3 pb-3 ' + width}>
+			<main className={'flex flex-col px-6 pb-28 ' + width}>
 				<Headline/>
 
 				<About/>

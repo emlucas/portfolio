@@ -51,3 +51,26 @@ header {
 img {
     transition: 0.3s;
 }
+
+#headlineBlob {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    /*margin-left: -400px;*/
+    /*margin-top: -400px;*/
+}
+
+rect {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.blobs {
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+}
+
+.blob {
+    fill: white;
+}
