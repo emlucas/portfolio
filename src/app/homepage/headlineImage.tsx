@@ -34,12 +34,13 @@ const HeadlineImage = () => {
     // Fade in the entire image blob component
     gsap.fromTo(blobSvg.current, {
         opacity: 0,
-        y: -10,
+        y: -15,
       },
       {
         opacity: 1,
         y: 0,
-        duration: 1
+        duration: 3,
+        ease: 'elastic.out(1, 0.75)'
       }
     )
 
