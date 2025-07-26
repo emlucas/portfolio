@@ -2,8 +2,8 @@ import HeadlineImage from "@/app/homepage/headlineImage";
 
 const Headline = () => {
 	return (
-		<section className={'flex justify-between w-full pt-28 pb-12'} id={'home'}>
-			<div className={'flex flex-col items-start justify-center z-10'}>
+		<section className={'flex justify-between w-full pt-32 pb-12 relative'} id={'home'}>
+			<div className={'flex flex-col items-start justify-center z-10 mr-96 lg:mr-0'}>
 				<span className={'font-medium pl-1'}>Hi, I'm</span>
 				<h1 className={'font-extrabold text-6xl'} id={'my-name'}>
 					Emma Lucas
@@ -19,7 +19,9 @@ const Headline = () => {
 				</button>
 			</div>
 
-			<HeadlineImage/>
+			<div className={'imgWrapper absolute top-2 -right-6 md:-right-12 lg:right-0'}>
+				<HeadlineImage/>
+			</div>
 		</section>
 	)
 }
