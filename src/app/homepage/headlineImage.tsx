@@ -2,33 +2,47 @@
 
 import {useGSAP} from "@gsap/react";
 import gsap from 'gsap';
-import MotionPathPlugin from "gsap/MotionPathPlugin";
 import {useRef} from "react";
 
-gsap.registerPlugin(useGSAP, MotionPathPlugin)
+gsap.registerPlugin(useGSAP)
 
 const HeadlineImage = () => {
   const blobSvg = useRef<SVGSVGElement>(null);
 
   useGSAP(() => {
-    console.log('animating')
-    const blobs = blobSvg.current?.getElementsByClassName('blob') || [];
     const durations = [10, 12, 14];
+    const startingRotations: number[] = [];
+
+    const blobs = blobSvg.current?.getElementsByClassName('blob') || [];
     for (let i = 0; i < blobs.length; i++) {
-      const startingRotation = gsap.utils.random(0, 360)
-      gsap.fromTo(blobs[i], {
-          rotation: startingRotation,
-          transformOrigin: '40% 50%',
-          opacity: 1,
-        },
-        {
-          rotation: startingRotation + 360,
-          transformOrigin: '40% 50%',
-          repeat: -1,
-          ease: 'none',
-          duration: durations[i]
-        })
+      startingRotations[i] = gsap.utils.random(0, 360);
     }
+
+    // Rotate sub-blob circle elements
+    gsap.fromTo('.blob', {
+        rotation: (index) => startingRotations[index],
+        transformOrigin: '40% 50%',
+      },
+      {
+        rotation: (index) => startingRotations[index] + 360,
+        transformOrigin: '40% 50%',
+        repeat: -1,
+        ease: 'none',
+        duration: (index) => durations[index],
+      }
+    )
+
+    // Fade in the entire image blob component
+    gsap.fromTo(blobSvg.current, {
+        opacity: 0,
+        y: -10,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1
+      }
+    )
 
   }, [blobSvg.current]);
 
