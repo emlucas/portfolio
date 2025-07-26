@@ -47,7 +47,8 @@ const HeadlineImage = () => {
 	}, [blobSvg.current]);
 
 	return (
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="headlineBlob" className={''}
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="headlineBlob" viewBox={'0 0 400 400'}
+			  className={'w-full h-full'}
 			  ref={blobSvg}>
 			<defs>
 				<filter id="goo">
