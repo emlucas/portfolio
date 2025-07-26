@@ -1,5 +1,23 @@
+'use client'
+
+import {useGSAP} from "@gsap/react";
+import gsap from 'gsap';
+
+gsap.registerPlugin(useGSAP)
+
 const HeadlineImage = () => {
-	// TODO: replace placeholder with actual image
+
+	useGSAP(() => {
+		gsap.to('.blob', {
+			x: 'random(-20, 20, 2)',
+			y: 'random(-20, 20, 2)',
+			duration: 5,
+			ease: 'power1.inOut',
+			repeat: -1,
+			repeatRefresh: true
+		})
+	})
+
 	return (
 		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="headlineBlob">
 			<defs>
