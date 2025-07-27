@@ -1,11 +1,18 @@
 import HeadlineImage from "@/app/homepage/headlineImage";
+import {Caprasimo} from "next/font/google";
+
+const caprasimo = Caprasimo({
+	weight: '400',
+	variable: "--font-caprasimo-sans",
+	subsets: ["latin"],
+})
 
 const Headline = () => {
 	return (
 		<section className={'flex justify-between w-full sm:pt-32 pt-[55vw] relative'} id={'home'}>
 			<div className={'flex flex-col items-start justify-center pb-12 z-10 mr-0 sm:mr-96 lg:mr-0'}>
 				<span className={'font-medium pl-1'}>Hi, I'm</span>
-				<h1 className={'font-extrabold text-6xl'} id={'my-name'}>
+				<h1 className={'font-extrabold text-6xl ' + caprasimo.className} id={'my-name'}>
 					Emma Lucas
 				</h1>
 				<h2 className={'tracking-wider font-medium text-lg pl-1'}>
