@@ -13,7 +13,7 @@ const Headline = () => {
 				</h2>
 
 				<button className={'mt-8'}>
-					<a href={'/Emma_Lucas_Resume.pdf'}
+					<a href={'/Emma_Lucas_Resume.pdf'} download
 						className={'ctaButton font-bold box-border border border-background/30 py-3 px-4 rounded-2xl shadow-rose-400 ' +
 							'hover:shadow-2xl cursor-pointer'}>Download CV</a>
 				</button>
