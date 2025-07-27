@@ -55,6 +55,10 @@ img {
     transition: 0.3s;
 }
 
+#home {
+    transition: padding-top 0.5s;
+}
+
 #headlineBlob {
     display: block;
     opacity: 0;
@@ -76,5 +80,5 @@ rect {
 }
 
 .imgWrapper {
-    transition: right 0.5s;
+    transition: 0.5s;
 }
