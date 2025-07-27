@@ -68,7 +68,7 @@ const HeadlineImage = () => {
 			</mask>
 			<rect x="0" y="0" mask="url(#mask)" fill="var(--color-red-300)" width="400" height="400"
 					className={'blobBackground'}/>
-			<image xlinkHref={'/portrait.png'} x="50" y="50" mask="url(#mask)" width="300" height="300"/>
+			<image xlinkHref={'/portrait.png'} x="50" y="75" mask="url(#mask)" width="300" height="300"/>
 		</svg>
 	)
 }
