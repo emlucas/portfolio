@@ -9,8 +9,6 @@
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
-    --font-sans: var(--font-montserrat-sans);
-    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,17 +43,15 @@ header {
     transition: box-shadow 0.3s;
 }
 
-.activeNav {
-    /*width: 308px;*/
-    background: var(--color-rose-400);
-    background: linear-gradient(to right, var(--color-orange-400) 0%, var(--color-rose-400) 100%);
+.iconLink {
+    transition: 0.3s;
 }
 
 img {
     transition: 0.3s;
 }
 
-#home {
+section {
     transition: padding-top 0.5s;
 }
 
